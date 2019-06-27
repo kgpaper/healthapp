@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/RelativeLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical" >
+
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TableLayout
+        android:id="@+id/tableLayout1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+        <TableRow
+            android:id="@+id/tableRow1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                app:srcCompat="@drawable/wap_logo" />
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+
+            <ImageButton
+                android:id="@+id/알람"
+                android:layout_width="0dp"
+                android:layout_height="215dp"
+                android:layout_weight="0.3"
+                android:text="알람"
+                android:background="@drawable/icon" />
+
+            <ImageButton
+                android:id="@+id/만보기"
+                android:layout_width="0dp"
+                android:layout_height="215dp"
+                android:layout_weight="0.3"
+                android:background="@drawable/icon3"
+                android:text="만보기" />
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tableRow3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.3" >
+
+            <ImageButton
+                android:id="@+id/산책로"
+                android:layout_width="0dip"
+                android:layout_height="215dp"
+                android:layout_weight="1"
+                android:text="Button"
+                android:background="@drawable/icon2"
+                />
+
+            <Button
+                android:id="@+id/button7"
+                android:layout_width="0dip"
+                android:layout_height="215dp"
+                android:layout_weight="1"
+                android:text="Button"
+                />
+
+        </TableRow>
+
+    </TableLayout>
+</ScrollView>
+</RelativeLayout>
